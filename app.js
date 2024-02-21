@@ -9,6 +9,9 @@ const dbConnection = require("./db/dbConfig");
 const userRoutes = require("./routes/userRoute");
 
 // middleware to parse the request body
+app.use(express.json());
+
+// middleware to parse the request body
 app.use("/api/users", userRoutes);
 
 // question routes middleware ??
