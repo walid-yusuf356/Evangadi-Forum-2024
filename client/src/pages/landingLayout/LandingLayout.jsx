@@ -22,8 +22,6 @@ function LandingLayout() {
           {currentPage === "login" && <Login setCurrentPage={setCurrentPage} />}
           {currentPage === "signup" && <SignUp setCurrentPage={setCurrentPage} />}
 
-         
-
           {/* welcome message */}
           <div className="col mt-5">
             <p className="abt my-3 fw-semibold">About</p>

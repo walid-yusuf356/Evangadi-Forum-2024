@@ -2,13 +2,19 @@
 import React from 'react'
 import { FaAngleRight } from 'react-icons/fa'
 import { LiaUserCircle } from 'react-icons/lia'
+import { useNavigate } from 'react-router'
 
 const Questions = () => {
+  const navigate = useNavigate();
+  const handleAnswerQuestion = () => {
+    navigate("/answer"); 
+  };
+  
   return (
     <div>
       <a className="text-decoration-none text-black" href="#">
             <hr />
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between" onClick={handleAnswerQuestion}>
               <div className="d-md-flex align-items-center">
                 <div className="user d-flex flex-column align-items-center">
                   {/* user */}
@@ -38,4 +44,4 @@ const Questions = () => {
   )
 }
 
-export default Questions
+export default Questions;

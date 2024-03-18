@@ -1,20 +1,22 @@
 import { Route, Routes } from "react-router-dom";
 import LandingLayout from "./pages/landingLayout/LandingLayout";
-// import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
-// import Register from "./pages/Register";
 import SignUp from "./pages/SignUp/SignUp";
+import Home from "./pages/Home/Home";
+import AskQuestion from "./pages/AskQuestion/AskQuestion";
+import Answer from "./components/Answer/Answer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/home" element={<Home />} />
           <Route path="/" element={<LandingLayout />} />
           <Route path="/login" element={<Login />} />
-          {/* <Route path="/register" element={<Register />} /> */}
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/askQuestion" element={<AskQuestion />} />
+          <Route path="/answer" element={<Answer />} />
         </Routes>
       </header>
     </div>
@@ -22,17 +24,3 @@ function App() {
 }
 
 export default App;
-
-// import React from "react";
-// import LandingLayout from "./pages/landingLayout/LandingLayout";
-// import Home from "./pages/Home/Home";
-// function App() {
-//   return (
-//     <>
-//       <LandingLayout />
-//       {/* <Home /> */}
-//     </>
-//   );
-// }
-
-// export default App;

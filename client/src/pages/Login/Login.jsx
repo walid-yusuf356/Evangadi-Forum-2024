@@ -31,7 +31,7 @@ function Login({setCurrentPage}) {
           });
     
           alert("login successful.");
-          navigate("/LandingLayout");
+          navigate("/home");
         } catch (error) {
           alert("Something went wrong. Please try again later.");
           console.log(error.response.data);
