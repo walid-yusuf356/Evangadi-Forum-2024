@@ -1,5 +1,4 @@
 import React from "react";
-// import evangadi.png
 import logo from "../../assets/evangadi-logo.png";
 import "../../index.css";
 function Header() {

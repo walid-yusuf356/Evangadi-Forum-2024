@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Question from "../../components/Question/Question";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ const Home = () => {
           <Question />
         </div>
       </section>
+      <Footer />
     </>
   );
 };
