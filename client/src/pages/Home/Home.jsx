@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useContext } from "react";
 import Header from "../../components/Header/Header";
 import { useNavigate, Link } from "react-router-dom";

@@ -63,7 +63,7 @@ function Footer() {
                 <h5 className="">Contact Info</h5>
                 <li>Evangadi Networks</li>
                 <li>support@evangadi.com</li>
-                <li>214-416-4033</li>
+                <li>+1-202-386-2702</li>
               </ul>
             </div>
           </div>

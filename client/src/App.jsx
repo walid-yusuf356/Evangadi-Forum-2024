@@ -59,8 +59,6 @@ function App() {
         <Route path="/questions" element={<AskQuestion />} />
         <Route path="/answer" element={<Answer />} />
         <Route path="/home" element={<Home />} />
-
-
       </Routes>
     </AppState.Provider>
   );
