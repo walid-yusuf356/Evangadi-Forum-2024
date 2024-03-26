@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Header from "../../components/Header/Header";
-import Login from "../Login/Login";
-import SignUp from "../SignUp/SignUp";
+import Login from "../../components/Login/Login";
+import SignUp from "../../components/SignUp/SignUp";
 import bg from "../../assets/bg-svg-f.svg";
 
 function LandingLayout() {
@@ -20,7 +20,9 @@ function LandingLayout() {
         <section className="container d-md-flex pt-5 gap-5">
           {/* form login/sign-up */}
           {currentPage === "login" && <Login setCurrentPage={setCurrentPage} />}
-          {currentPage === "signup" && <SignUp setCurrentPage={setCurrentPage} />}
+          {currentPage === "signup" && (
+            <SignUp setCurrentPage={setCurrentPage} />
+          )}
 
           {/* welcome message */}
           <div className="col mt-5">
